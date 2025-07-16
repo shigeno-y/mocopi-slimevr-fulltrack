@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 python-osc = "*"
+usd-core = "*"
 
 [dev-packages]
 ruff = "*"
