@@ -5,7 +5,7 @@ from statistics import fmean
 from datetime import datetime
 
 from mocopiSlimevrFulltrack.Reader.MocopiUDP import decomposePacket
-from mocopiSlimevrFulltrack.Writer import USDWriter, BVHWriter, DebugWriter
+from mocopiSlimevrFulltrack.Writer import USDWriter, BVHWriter, DebugWriter, OSCWriter
 
 CLIENT_QUEUES = dict()
 CLIENT_QUEUES_LOCK = threading.Semaphore()
@@ -16,6 +16,7 @@ WRITERS = {
     "usd": USDWriter,
     "bvh": BVHWriter,
     "debug": DebugWriter,
+    "osc": OSCWriter,
 }
 WRITER_OF_CHOICE = str()
 WRITER_OPTIONS = dict()
