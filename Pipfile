@@ -13,3 +13,6 @@ ruff = "*"
 [requires]
 python_version = "3.11"
 python_full_version = "3.11.9"
+
+[scripts]
+osc = "python -Xutf8 -m mocopiSlimevrFulltrack udp --writer osc"
